@@ -2,5 +2,16 @@
 language: python
 python: 
   - "2.7"
-script: 
+before_install:
+  - echo "before_install"
+install:
+  - echo "install start"
+  - echo "install done"
+before_script:
+  - echo "before script"
+  - sleep 3
+script:
+  - echo "script start"
   - "python test.py"
+after_script:
+  - echo "after_script start"
