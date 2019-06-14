@@ -7,9 +7,6 @@ before_install:
   - echo "before_install"
 install:
   - echo "install start"
-   - pip install pytest
-  - pip install pytest-cov
-  - pip install coveralls
   - echo "install done"
 before_script:
   - echo "before script"
@@ -17,12 +14,8 @@ before_script:
 script:
   - echo "script start"
   - "python test.py"
-  - pytest test.py
 after_script:
   - echo "after_script start"
-after_success:
-  - coveralls
-
 
 
 
