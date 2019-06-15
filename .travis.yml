@@ -1,6 +1,6 @@
---- 
+---
 language: python
-python: 
+python:
   - "2.7"
 before_install:
   - echo "before_install"
@@ -15,3 +15,5 @@ script:
   - "python test.py"
 after_script:
   - echo "after_script start"
+
+
