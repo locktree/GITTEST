@@ -35,6 +35,19 @@ before_script:
 script:
   - echo "script start"
   - "python test.py"
+
+  - nosetests -v && flake8 *.py --max-line-length=110
+  - python -m unittest discover -v
+  ## make sure there are no duplicates
+  - bin/console validate-groups
+  ## import data and genearte YAML
+  - bin/console import
+  ## generate website to "/output" directory
+  - vendor/bin/statie generate source
+  ## static analysis
+  - composer check-cs
+  - composer phpstan
+
   
 after_script:
   - echo "after_script start"
