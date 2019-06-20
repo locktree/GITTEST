@@ -8,17 +8,16 @@ cache: pip
 
 python:
   ## test it on MULTIPLE different Python versions
-  - "2.6"
   - "2.7"
 
 ## configure which branches to run
 branches:
   ## whitelist
   only:
-    - master
     - /^deploy-.*$/   ## regex ok
   ## blacklist
   except:
+    - master
     - dontrunme 
     - test 
     
