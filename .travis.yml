@@ -10,13 +10,23 @@ python:
   ## test it on MULTIPLE different Python versions
   - "2.7" 
 
-
-
 before_install:
   - echo "before_install"
+  - pip install --upgrade pip
+  - sudo apt-get update -qq
   
 install:
   - echo "install start"
+  
+  ## FROM HERE
+  - pip install flake8 mock nose
+  - pip install .
+
+  ## get the reporter for Coveralls
+  - pip install coveralls
+  - pip install codecov
+
+  ## TO HERE
   - echo "install done"
   
 before_script:
