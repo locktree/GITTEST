@@ -20,7 +20,6 @@ install:
   
   ## FROM HERE
   - pip install flake8 mock nose
-  - pip install .
 
   ## get the reporter for Coveralls
   - pip install coveralls
