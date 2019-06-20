@@ -37,7 +37,7 @@ script:
   - "python test.py"
 
   - nosetests -v
-  - flake8 *.py --max-line-length=110
+  #- flake8 *.py --max-line-length=110
   - python -m unittest discover -v
 
 
