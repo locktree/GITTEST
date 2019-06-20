@@ -1,4 +1,6 @@
 ---
+## Choose a build environment
+dist: xenial
 language: python
 python:
   - "2.7"
