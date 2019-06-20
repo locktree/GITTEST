@@ -8,7 +8,7 @@ cache: pip
 
 python:
   ## test it on MULTIPLE different Python versions
-  - "2.7"
+  - "2.7" 
 
 ## configure which branches to run
 branches:
