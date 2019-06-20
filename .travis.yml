@@ -40,6 +40,8 @@ script:
   #- flake8 *.py --max-line-length=110
   - python -m unittest discover -v
 
+  ## coverage reports
+  - python -m coverage report -m
 
 
 
