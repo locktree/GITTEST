@@ -7,18 +7,37 @@ language: python
 cache: pip
 
 python:
+  ## test it on MULTIPLE different Python versions
+  - "2.6"
   - "2.7"
+
+## configure which branches to run
+branches:
+  ## whitelist
+  only:
+    - master
+    - /^deploy-.*$/   ## regex ok
+  ## blacklist
+  except:
+    - dontrunme 
+    - test 
+    
+    
 before_install:
   - echo "before_install"
+  
 install:
   - echo "install start"
   - echo "install done"
+  
 before_script:
   - echo "before script"
   - sleep 3
+  
 script:
   - echo "script start"
   - "python test.py"
+  
 after_script:
   - echo "after_script start"
 
