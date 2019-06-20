@@ -37,12 +37,19 @@ script:
   - "python test.py"
 
   - nosetests -v
-  #- flake8 *.py --max-line-length=110
   - python -m unittest discover -v
 
-  ## coverage reports
-  - python -m coverage report -m
+  #- flake8 *.py --max-line-length=110
+  #- python -m coverage report -m      ## coverage reports
+  
+  ## python tests
+  - python -m coverage run --branch --source=src -m unittest discover -s tests -v
+  ## coverage reports in XML format
+  - python -m coverage xml
+  ## submit the reports
+  - coveralls
 
+  - coverage run -m pytest
 
 
   
