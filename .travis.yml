@@ -2,6 +2,10 @@
 ## Choose a build environment
 dist: xenial
 language: python
+
+## Caching so the next build will be fast too.
+cache: pip
+
 python:
   - "2.7"
 before_install:
