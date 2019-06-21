@@ -1,17 +1,59 @@
---- 
+---
+## Choose a build environment
+dist: xenial
 language: python
-python: 
-  - "2.7"
+
+## Caching so the next build will be fast too.
+cache: pip
+
+python:
+  ## test it on MULTIPLE different Python versions
+  - "2.7" 
+
 before_install:
   - echo "before_install"
+  - pip install --upgrade pip
+  - sudo apt-get update -qq
+  
 install:
   - echo "install start"
+  
+  ## FROM HERE
+  - pip install flake8 mock nose
+
+  ## get the reporter for Coveralls
+  - pip install coveralls
+  - pip install codecov
+
+  ## TO HERE
   - echo "install done"
+  
 before_script:
   - echo "before script"
   - sleep 3
+  
 script:
   - echo "script start"
   - "python test.py"
+
+  - nosetests -v
+  - python -m unittest discover -v
+
+  #- flake8 *.py --max-line-length=110
+  #- python -m coverage report -m      ## coverage reports
+  
+  ## python tests
+  #- python -m coverage run --branch --source=src -m unittest discover -s tests -v
+  ## coverage reports in XML format
+  #- python -m coverage xml
+  ## submit the reports
+  - coveralls
+
+  - coverage run -m pytest
+
+
+  
 after_script:
   - echo "after_script start"
+
+
