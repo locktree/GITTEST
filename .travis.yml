@@ -43,9 +43,9 @@ script:
   #- python -m coverage report -m      ## coverage reports
   
   ## python tests
-  - python -m coverage run --branch --source=src -m unittest discover -s tests -v
+  #- python -m coverage run --branch --source=src -m unittest discover -s tests -v
   ## coverage reports in XML format
-  - python -m coverage xml
+  #- python -m coverage xml
   ## submit the reports
   - coveralls
 
