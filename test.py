@@ -3,13 +3,14 @@
 """
 A simple python script template.
 @Author      : mitchell
-@Last Update : Wed 25 Dec 2019 12:58:19 PM CET
+@Last Update : Wed 25 Dec 2019 01:10:29 PM CET
 """
 import os
 import sys
 import argparse
 
 def main():
+    ## some comment
     print ("Hello world")
     print ("Hello world")
     print ("Hello world")
