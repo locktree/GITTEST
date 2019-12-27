@@ -3,7 +3,7 @@
 """
 A simple python script template.
 @Author      : mitchell
-@Last Update : Wed 25 Dec 2019 01:12:59 PM CET
+@Last Update : Fri 27 Dec 2019 01:52:26 PM CET
 """
 import os
 import sys
@@ -12,6 +12,7 @@ import argparse
 def main():
     ## some comment
     ## some comment
+    ## this line is an example of the cherry-pick
     print ("Hello world")
     print ("Hello world")
     print ("Hello world")
