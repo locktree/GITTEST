@@ -40,3 +40,4 @@ line in testbranch 2
 line in testbranch 2
 line in testbranch 2
 line in testbranch 2
+line in testbranch 2
