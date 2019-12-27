@@ -36,3 +36,4 @@ line in testbranch
 line in testbranch
 line in testbranch 1
 line in testbranch 1
+line in testbranch 2
