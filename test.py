@@ -4,9 +4,9 @@
 A simple python script template.
 @Author      : mitchell
 <<<<<<< Updated upstream
-@Last Update : Wed 08 Jul 2020 09:02:51 AM CEST
+@Last Update : Wed 08 Jul 2020 09:35:37 AM CEST
 ||||||| merged common ancestors
-@Last Update : Wed 08 Jul 2020 09:02:51 AM CEST
+@Last Update : Wed 08 Jul 2020 09:35:37 AM CEST
 =======
 @Last Update : Wed 08 Jul 2020 09:01:41 AM CEST
 >>>>>>> Stashed changes
@@ -20,7 +20,7 @@ def main():
     ## some comment
     ## this line is an example of the cherry-pick
     print ("Hello world")
-    print ("Hello world2")
+    print ("Hello world3")
     print ("Hello world")
 
 if __name__ == '__main__':
