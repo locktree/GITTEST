@@ -4,9 +4,9 @@
 A simple python script template.
 @Author      : mitchell
 <<<<<<< Updated upstream
-@Last Update : Wed 08 Jul 2020 09:44:43 AM CEST
+@Last Update : Wed 08 Jul 2020 10:18:21 AM CEST
 ||||||| merged common ancestors
-@Last Update : Wed 08 Jul 2020 09:44:43 AM CEST
+@Last Update : Wed 08 Jul 2020 10:18:21 AM CEST
 =======
 @Last Update : Wed 08 Jul 2020 09:01:41 AM CEST
 >>>>>>> Stashed changes
@@ -25,6 +25,10 @@ def main():
     this is some line from repo1 - master
     and one more line
     check this one
+    line 1
+    line 2
+    line 4
+    line 5
 
 if __name__ == '__main__':
     main()
