@@ -3,7 +3,7 @@
 """
 A simple python script template.
 @Author      : mitchell
-@Last Update : Fri 27 Dec 2019 01:52:26 PM CET
+@Last Update : Wed 08 Jul 2020 09:01:01 AM CEST
 """
 import os
 import sys
@@ -14,7 +14,7 @@ def main():
     ## some comment
     ## this line is an example of the cherry-pick
     print ("Hello world")
-    print ("Hello world")
+    print ("Hello world1")
     print ("Hello world")
 
 if __name__ == '__main__':
