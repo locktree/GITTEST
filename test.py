@@ -3,7 +3,7 @@
 """
 A simple python script template.
 @Author      : mitchell
-@Last Update : Wed 08 Jul 2020 11:26:53 AM CEST
+@Last Update : Wed 08 Jul 2020 11:51:05 AM CEST
 """
 import os
 import sys
@@ -27,6 +27,7 @@ def main():
     line 6
     line 7
     line 8
+    line 9
 
 if __name__ == '__main__':
     main()
